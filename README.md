@@ -16,12 +16,28 @@ of a cryptographic hash of the data objects into a DIP3 special transaction
 
 ## Overview
 
-The data objects themselves are JSON and validated using the JSONSchema
-specification, using pre-defined JSON Schemas which are currently available at:
-<https://github.com/dashevo/dpp-schemas/>.
+We define data objects which themselves are JSON and validated using the
+JSONSchema specification, using pre-defined JSON Schemas and meta-schemas which
+are currently available at: <https://github.com/dashevo/dpp-schemas/>.
 
 In addition to adherance to pre-defined JSON Schemata, we also define rules for
 hashing and serialization of these objects.
+
+The included meta-schemas allow for creation of conforming schemas (called
+DPP-schemas) which are used to define fields in a Dash Platform application.
+
+## Hashing and Serialization
+
+Objects are hashed using double-sha256. All objects to be hashed must use CBOR
+encoding as input to the hash function.
+
+In pseudocode this example looks like:
+
+```
+const obj = {'dppid': 1234};
+const cbor = CBORify(obj);
+const theHash = hash(cbor);
+```
 
 ## Maintainers
 
