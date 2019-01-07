@@ -1,5 +1,7 @@
 # dpp-spec
 
+## Note: This is currently a WIP as we transition documentation over to this specification repo.
+
 > Dash Platform Protocol Specification
 
 The DPP spec defines a protocol for data object which can be stored outside the
