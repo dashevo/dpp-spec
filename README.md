@@ -4,8 +4,8 @@
 
 > Dash Platform Protocol Specification
 
-The DPP spec defines a protocol for data object which can be stored outside the
-blockchain layer, and these objects verified using the blockchain via inclusion
+The DPP spec defines a protocol for data objects which can be stored outside the
+blockchain layer. These objects can be verified using the blockchain via the inclusion
 of a cryptographic hash of the data objects into a DIP3 special transaction
 (which are indeed part of the Dash blockchain).
 
@@ -13,7 +13,7 @@ of a cryptographic hash of the data objects into a DIP3 special transaction
 
 - [Overview](#overview)
 - [Contributing](#contributing)
-- [Maintainer](#maintainer)
+- [Maintainers](#maintainers)
 - [License](#license)
 
 ## Overview
@@ -22,7 +22,7 @@ We define data objects which themselves are JSON and validated using the
 JSONSchema specification, using pre-defined JSON Schemas and meta-schemas which
 are currently available at: <https://github.com/dashevo/dpp-schemas/>.
 
-In addition to adherance to pre-defined JSON Schemata, we also define rules for
+In addition to adherence to pre-defined JSON Schemata, we also define rules for
 hashing and serialization of these objects.
 
 The included meta-schemas allow for creation of conforming schemas (called
