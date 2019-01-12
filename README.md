@@ -6,7 +6,7 @@
 
 The DPP spec defines a protocol for data objects which can be stored outside the
 blockchain layer. These objects can be verified using the blockchain via the inclusion
-of a cryptographic hash of the data objects into a DIP3 special transaction
+of a cryptographic hash of the data objects into a DIP2 special transaction
 (which are indeed part of the Dash blockchain).
 
 ## Table of Contents
