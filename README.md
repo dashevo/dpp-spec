@@ -20,7 +20,7 @@ of a cryptographic hash of the data objects into a DIP2 special transaction
 
 We define data objects which themselves are JSON and validated using the
 JSONSchema specification, using pre-defined JSON Schemas and meta-schemas which
-are currently available at: <https://github.com/dashevo/dpp-schemas/>.
+are currently available at: <https://github.com/dashevo/js-dpp/tree/master/schema>.
 
 In addition to adherence to pre-defined JSON Schemata, we also define rules for
 hashing and serialization of these objects.
