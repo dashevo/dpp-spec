@@ -28,6 +28,29 @@ hashing and serialization of these objects.
 The included meta-schemas allow for creation of conforming schemas (called
 DPP-schemas) which are used to define fields in a Dash Platform application.
 
+## Contracts and Objects
+
+Define and describe both contracts and objects
+
+## State
+
+## State Transitions
+
+Broken into headers and packets
+
+### ST Headers
+
+See hashing & serialization section, will be CBOR serialized and hashed via
+double-sha256, then added to the blockchain via the DIPx special transaction
+type as a payload.
+
+### ST Packets
+
+Will not be added to the blockchain, but a hash of the serialized packet will
+be in the ST header (which is included in the blockchain). ST Packets are
+intended to be stored on masternodes via some storage service such as DashDrive
+(which is out of the scope of this spec).
+
 ## Hashing and Serialization
 
 Objects are hashed using double-sha256. All objects to be hashed must use CBOR
